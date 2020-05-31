@@ -1,6 +1,9 @@
 这是一个在不分割字符的情况下直接识别车牌号码的简单项目。
 #### 使用方法：
 ##### 第一步：生成训练和测试数据集  
+##### 网络模型:
+ ![model](https://github.com/sunnythree/car_plate/blob/master/doc/car_plate_rec.png)
+##### 训练
 ```
     cd generateCarPlate
     python3 genCarPlate.py
@@ -13,10 +16,7 @@
 ![蒙ZUTK8T](https://github.com/sunnythree/car_plate/blob/master/doc/蒙ZUTK8T.jpg)  
 生成的图片已经做了旋转、模糊、灰度变化等图像增强。git
 
-### 训练卷积only的模型
-##### 网络模型:
- ![model](https://github.com/sunnythree/car_plate/blob/master/doc/car_plate_rec.png)
-##### 训练
+
 ```
     cd pytorch_model
     python3 train.py 30 0.0001
